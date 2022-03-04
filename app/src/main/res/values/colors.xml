@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f4511e</color>
+    <color name="colorPrimaryDark">#b91400</color>
+    <color name="colorPrimaryLight">#ff844c</color>
+    <color name="colorAccent">#2979ff</color>
+    <color name="colorAccentDark">#004ecb</color>
+    <color name="colorAccentLight">#75a7ff</color>
+    <color name="colorCartSummaryBar">@color/colorPrimary</color>
+</resources>

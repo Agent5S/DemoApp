@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shop_navigation"
+    app:startDestination="@id/shopFragment">
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.example.demoapp.ShopFragment"
+        android:label="Shop"
+        tools:layout="@layout/fragment_shop">
+        <action
+            android:id="@+id/action_shopFragment_to_itemsFragment"
+            app:destination="@id/categoryFragment" />
+        <deepLink
+            android:id="@+id/deepLink5"
+            android:autoVerify="true"
+            app:uri="https://example.com/shop" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.demoapp.CategoryFragment"
+        tools:layout="@layout/fragment_category">
+        <action
+            android:id="@+id/action_itemsFragment_to_itemFragment"
+            app:destination="@id/productFragment" />
+        <deepLink
+            android:id="@+id/deepLink2"
+            android:autoVerify="true"
+            app:uri="https://example.com/categories/{categoryId}" />
+        <argument
+            android:name="categoryId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_categoryFragment_self"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.example.demoapp.ProductFragment"
+        tools:layout="@layout/fragment_product">
+        <deepLink
+            android:id="@+id/deepLink4"
+            android:autoVerify="true"
+            app:uri="https://example.com/items/{id}" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+</navigation>

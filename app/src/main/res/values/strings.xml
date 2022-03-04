@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DemoApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="featured_basic">Basic Consumer Products</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

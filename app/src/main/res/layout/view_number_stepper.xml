@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/stepperButtonsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rect_small_radius"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/stepperRemove"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/colorPrimary"
+            android:src="@drawable/ic_remove" />
+
+        <Space
+            android:layout_width="2dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/stepperAdd"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/colorPrimary"
+            android:src="@drawable/ic_add" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="4dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/stepperNumberDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:text="x1" />
+</LinearLayout>
